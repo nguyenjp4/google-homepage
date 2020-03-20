@@ -1,0 +1,1 @@
+This is a google home page test to show HTML, CSS and more practice using GIT
