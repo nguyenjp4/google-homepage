@@ -1,20 +1,80 @@
 <!DOCTYPE html>
 <html>
-
 <head>
+
 <style>
 li {
   float: left;
 }
-
 a {
   display:block;
   padding: 8px;
   
 }
+.center
+
+{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+.searchbox
+{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.searchbox input{
+
+
+height: 30px;
+width: 400px;
+
+}
+
+
+form.searchbox input[type=text]  {
+
+
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+}
+form.searchbox button {
+
+
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+
+  
+}
+
+form.searchbox button:hover {
+  background: #0b7dda;
+}
 </style>
+
 </head>
+
+
 <body>
+
   <ul style= "list-style-type: none; margin: 0; padding: 0; display: inline;">
     <li><a href="default.asp">About</a></li>
     <li><a href="news.asp">Store</a></li>
@@ -22,16 +82,31 @@ a {
     <li style="float:right"><a href="contact.asp">Gmail</a></li>
     
   </ul>
-    
-  
-  
-  <img  src="https://web.archive.org/web/20191130234759im_/https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Logo" height= "92" width="272" style = "padding-top:109px">
+   
+  <img height="92" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="W3Schools.com" class = "center" width="272" style="padding-top:109px">
 
 
   
-  <div class="topnav">
-        <input syle= "float:right" type="text" placeholder="">
-      </div>
-      
+  <form class = "searchbox">
+    <input type="text" placeholder="">
+    <button type="submit"><i class="fa fa-search"></i></button>
+  
+
+
+
+  </form>
+
+
+
+
+
+
+
 </body>
+
+
+
+
+
+
 </html>
