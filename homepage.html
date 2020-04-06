@@ -31,19 +31,36 @@ background-color: blue;
 .searchbox
 {
 
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
+  margin-top: auto;
+  margin-right: 0px;
+  margin-bottom: auto;
+  margin-left: 0px;
+  line-height: 34;
+  outline-color: initial;
+  outline-style: none;
+  outline-width: initial
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-basis: 100%;
+  font-size: 16px;
 }
 .searchbox input{
-
-background: url("http://kodyrabatowe.wp.pl/img/ico/search_gr.png") top left     no-repeat;
+-webkit-writing-mode: horizontal-tb !important;
 height:30px;
 padding-left:25px;
 height: 30px;
 width: 400px;
-
+text-rendering: auto;
+color: -internal-light-dark-color(black, white);
+letter-spacing: normal;
+word-spacing: normal;
+text-transform: none;
+text-indent: 0px;
+text-shadow: none;
+display: inline-block;
+text-align: start;
+-webkit-appearance: textfield;
+background-color: -internal-light-dark-color(white, black);
 }
 
 
@@ -119,18 +136,19 @@ display: table;
     
   </ul>
    
-  <img height="92" src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="W3Schools.com" class = "center" width="272" style="padding-top:109px">
+  <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="W3Schools.com" class = "center" style="padding-top:109px">
 
 
   <center>
+    <img id="search-icon" src="https://img.icons8.com/16/search">
   <form class = "searchbox">
     <input type="text" placeholder="">
     <button name= "Google Search"  type="submit"> Google Search</button>
     <button name="I'm Feeling Lucky" type="submit">I'm Feeling Lucky</button>
-
+  </form>
   </center>
 
-  </form>
+  
 
 
 
