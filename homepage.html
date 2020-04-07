@@ -35,7 +35,7 @@ background-color: blue;
   margin-right: 0px;
   margin-bottom: auto;
   margin-left: 0px;
-  line-height: 34;
+  line-height: 1;
   outline-color: initial;
   outline-style: none;
   outline-width: initial
@@ -44,27 +44,9 @@ background-color: blue;
   flex-basis: 100%;
   font-size: 16px;
 }
-.searchbox input{
--webkit-writing-mode: horizontal-tb !important;
-height:30px;
-padding-left:25px;
-height: 30px;
-width: 400px;
-text-rendering: auto;
-color: -internal-light-dark-color(black, white);
-letter-spacing: normal;
-word-spacing: normal;
-text-transform: none;
-text-indent: 0px;
-text-shadow: none;
-display: inline-block;
-text-align: start;
--webkit-appearance: textfield;
-background-color: -internal-light-dark-color(white, black);
-}
 
 
-form.searchbox input[type=text]  {
+.searchbox input[type=text]  {
 
 
   padding: 10px;
@@ -78,7 +60,7 @@ form.searchbox input[type=text]  {
   align-items: flex-start;
   display: inline-block;
 }
-form.searchbox button {
+.searchbox button {
 
 
   
@@ -140,13 +122,21 @@ display: table;
 
 
   <center>
-    <img id="search-icon" src="https://img.icons8.com/16/search">
-  <form class = "searchbox">
-    <input type="text" placeholder="">
+
+    <div class = "input-icons">
+    
+      <img id="search-icon" src="https://img.icons8.com/16/search">
+ 
+      <input class = "searchbox" type="text" placeholder="">
+  
+
+    </div>    
     <button name= "Google Search"  type="submit"> Google Search</button>
     <button name="I'm Feeling Lucky" type="submit">I'm Feeling Lucky</button>
-  </form>
-  </center>
+
+  
+  
+</center>
 
   
 
